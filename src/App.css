@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  text-align: center;
+}
+main {
+  width: 100%;
+}
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  list-style: none;
+}
+.user {
+  border: solid 1px white;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #232323;
+}
+.user h4 {
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

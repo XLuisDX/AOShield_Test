@@ -1,0 +1,72 @@
+[
+  {
+    "id": 5104257,
+    "name": "Sachin Pilla",
+    "email": "pilla_sachin@bartell-schimmel.example",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 5104256,
+    "name": "Mr. Jai Chopra",
+    "email": "jai_chopra_mr@kshlerin.test",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 5104255,
+    "name": "Mr. Kalpana Panicker",
+    "email": "mr_kalpana_panicker@abshire.test",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 5104254,
+    "name": "Kama Rana",
+    "email": "kama_rana@kirlin.example",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 5104252,
+    "name": "Adityanandan Gowda",
+    "email": "gowda_adityanandan@ferry.test",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 5104251,
+    "name": "Gautama Jain",
+    "email": "jain_gautama@strosin-jacobson.example",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 5104249,
+    "name": "Opaline Agarwal",
+    "email": "agarwal_opaline@roberts.test",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 5104248,
+    "name": "Brijesh Sethi",
+    "email": "sethi_brijesh@schumm.test",
+    "gender": "female",
+    "status": "active"
+  },
+  {
+    "id": 5104247,
+    "name": "Shwet Achari",
+    "email": "shwet_achari@bergnaum-wyman.test",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 5104246,
+    "name": "Aamod Chopra Esq.",
+    "email": "aamod_chopra_esq@ratke.example",
+    "gender": "male",
+    "status": "inactive"
+  }
+]
