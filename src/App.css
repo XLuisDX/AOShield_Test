@@ -30,3 +30,18 @@ form {
   justify-content: center;
   align-items: center;
 }
+.post-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link-back {
+  padding: 0.5rem;
+  background-color: #850f1d;
+  color: white;
+  width: 10%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}

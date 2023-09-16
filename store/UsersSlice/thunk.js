@@ -1,4 +1,4 @@
-import { addUser, setUsers, deleteUser } from "./UsersSlice";
+import { addUser, setUsers, deleteUser, viewUser } from "./UsersSlice";
 import { TOKEN } from "../../config";
 
 export const getUsers = () => {
@@ -20,7 +20,6 @@ export const postUser = (data) => {
       body: JSON.stringify(data),
     });
     const json = await res.json();
-    console.log({ json });
     dispatch(addUser(json));
   };
 };
@@ -34,5 +33,12 @@ export const restDeleteUser = (id) => {
     });
     console.log(res.status);
     dispatch(deleteUser(id));
+  };
+};
+export const getPosts = (id) => {
+  return async (dispatch) => {
+    const res = await fetch(`https://gorest.co.in/public/v2/users/${id}/posts`);
+    const json = await res.json();
+    dispatch(viewUser(json));
   };
 };

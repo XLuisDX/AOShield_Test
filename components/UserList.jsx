@@ -1,20 +1,29 @@
 import { useDispatch } from "react-redux";
-// import { deleteUser } from "../store/UsersSlice/UsersSlice";
 import { useSelector } from "react-redux";
-import { restDeleteUser } from "../store/UsersSlice/thunk";
+import { getPosts, restDeleteUser } from "../store/UsersSlice/thunk";
+import { useNavigate } from "react-router-dom";
 
 export function UserList() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const users = useSelector((state) => state.users.user);
 
   const hasUsers = users?.length > 0;
 
-  return hasUsers ? List({ users, dispatch }) : <p>There is not users</p>;
+  return hasUsers ? (
+    List({ users, dispatch, navigate })
+  ) : (
+    <p>There is not users</p>
+  );
 }
 
-function List({ users, dispatch }) {
+function List({ users, dispatch, navigate }) {
   const handleClick = (id) => {
     dispatch(restDeleteUser(id));
+  };
+  const handleView = (id) => {
+    dispatch(getPosts(id));
+    navigate("/user-view");
   };
 
   return (
@@ -26,12 +35,16 @@ function List({ users, dispatch }) {
           <p>{user.gender}</p>
           <p>{user.status}</p>
           <button
-            onClick={() => {
-              console.log({ user });
-              handleClick(user.id);
-            }}
+            onClick={() => handleClick(user.id)}
+            style={{ background: "#850F1D " }}
           >
             Delete
+          </button>
+          <button
+            onClick={() => handleView(user.id)}
+            style={{ background: "#3CA2DC " }}
+          >
+            View
           </button>
         </li>
       ))}
